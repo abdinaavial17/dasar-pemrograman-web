@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(139, 139, 139, 0.514);
+    position: sticky;
+    top: 0;
+}
+
+.navbar .navbar-list ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.navbar .navbar-list li {
+    list-style-type: none;
+}
+
+.navbar .navbar-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.navbar .navbar-list a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    padding: 15px;
+}
+
+main {
+    width: 100%;
+    padding: 2rem;
+    /* display: flex; */
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+main .content .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 20px 150px 50px;
+    gap: 100px;
+    box-shadow: 0 5px 5px rgba(139, 139, 139, 0.514);
+}
+
+main .content .intro .deskripsi {
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+main .content .intro .deskripsi h1 {
+    margin: 0;
+}
+
+main .content .intro .deskripsi .pesan {
+    margin-top: 40px;
+}
+
+main .content .intro .deskripsi a {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+main .content .intro .deskripsi a:hover {
+    background-color: white;
+    color: grey;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.layanan {
+    padding: 20px 20px 120px 20px;
+    box-shadow: 0 5px 5px rgba(139, 139, 139, 0.514);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.layanan .pelayanan {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.layanan .pelayanan .layanan-card {
+    padding: 10px;
+    text-align: center;
+}
+
+.layanan .pelayanan .layanan-card h3 {
+    text-align: center;
+}
+
+.layanan .pelayanan .layanan-card .layanan-link {
+    margin: 40px;
+}
+
+.layanan .pelayanan .layanan-card .layanan-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.layanan .pelayanan .layanan-card .layanan-link a:hover {
+    color: gray;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+} 
+
+.tentang {
+    padding-top: 50px;
+    box-shadow: 0 5px 5px rgba(139, 139, 139, 0.514);
+}
+
+.tentang .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px 150px 50px;
+    gap: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 5px rgba(139, 139, 139, 0.514);
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    .layanan .pelayanan {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main .content .intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 150px 20px 150px 50px;
+        gap: 100px;
+        box-shadow: 0 5px 5px rgba(139, 139, 139, 0.514);
+    }
+    main .content .intro .deskripsi a {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+    }
+    main .content .intro .deskripsi a:hover {
+        background-color: white;
+        color: grey;
+        font-weight: bold;
+        transition: all 0.4s ease-in-out;
+    }
+    .tentang .about {
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 50px 150px 50px;
+        gap: 100px;
+    }
+}
